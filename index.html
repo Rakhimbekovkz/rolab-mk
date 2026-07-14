@@ -26,8 +26,8 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
 .center{text-align:center}
 section{padding:clamp(40px,6.5vw,64px) 0;position:relative}
 .eye{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.4px;padding:8px 16px;border-radius:30px;background:var(--peach);color:var(--coral)}
-h2{font-weight:900;font-size:clamp(26px,4.6vw,38px);line-height:1.1;margin:12px 0 10px;letter-spacing:-.5px}
-.sub{color:var(--gray);font-size:17px;max-width:600px;margin:0 auto}
+h2{font-weight:900;font-size:clamp(26px,4.6vw,38px);line-height:1.12;margin:12px 0 10px;letter-spacing:-.5px;text-wrap:balance}
+.sub{color:var(--gray);font-size:17px;max-width:600px;margin:0 auto;text-wrap:pretty}
 .shead{text-align:center;max-width:720px;margin:0 auto 8px}
 .em-c{color:var(--coral)}.em-t{color:var(--teal)}.em-p{color:var(--purple)}
 /* buttons */
@@ -47,9 +47,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,247,241,.92);backdro
 /* hero */
 .hero{background:radial-gradient(1200px 500px at 80% -10%,#FFE3D3,transparent),var(--cream);overflow:hidden}
 .hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:clamp(28px,5vw,52px) 0}
-.hero h1{font-weight:900;font-size:clamp(30px,5vw,48px);line-height:1.05;letter-spacing:-1px}
+.hero h1{font-weight:900;font-size:clamp(29px,4.8vw,46px);line-height:1.08;letter-spacing:-1px;text-wrap:balance}
 .hero h1 em{font-style:normal;color:var(--coral)}
-.hero p.lead{color:#5c566e;font-size:clamp(16px,2vw,19px);margin-top:16px;max-width:520px}
+.hero p.lead{color:#5c566e;font-size:clamp(16px,2vw,19px);margin-top:16px;max-width:520px;text-wrap:pretty}
 .hero .cta-row{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
 .hero .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
 .hero .badges span{background:#fff;border:1.5px solid var(--line);border-radius:30px;padding:8px 15px;font-weight:800;font-size:14px;display:flex;align-items:center;gap:7px}
@@ -159,18 +159,18 @@ footer .lg{color:#fff}
 <header><div class="wrap nav">
   <div class="lg"><span class="m"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#FF6A3D"/><g fill="#fff"><rect x="37" y="25" width="9" height="50" rx="2.5"/><rect x="54" y="25" width="9" height="50" rx="2.5"/><rect x="25" y="40" width="50" height="9" rx="2.5"/><rect x="25" y="57" width="50" height="9" rx="2.5"/></g></svg></span><span class="t">Shanyraq Study x RoLab</span></div>
   <span class="sp"></span>
-  <button class="btn sm js-quiz">Записать ребёнка</button>
+  <button class="btn sm js-quiz">Записаться</button>
 </div></header>
 
 <!-- HERO -->
 <div class="hero"><div class="wrap"><div class="grid">
   <div>
-    <span class="eye">🤖 Мастер-класс по робототехнике · 25–26 июля · Алматы</span>
-    <h1>Ребёнок сам соберёт робота и напечатает <em>игрушку на 3D</em> — и загорится новым увлечением</h1>
-    <p class="lead">Мастер-класс по робототехнике для школьников <b>1–7 класса</b>. Приходите всей семьёй: пока ребёнок увлечённо создаёт — вы увидите, как горят его глаза.</p>
-    <div class="cta-row"><button class="btn pulse js-quiz">Записать ребёнка на МК →</button></div>
-    <p style="margin-top:12px;font-weight:800;color:#5c566e;font-size:14.5px">🎫 Участие 10 000 ₸ за ребёнка · родитель бесплатно</p>
-    <div class="badges"><span>🎫 10 000 ₸/ребёнок</span><span>📅 25–26 июля</span><span>👦 1–7 класс</span><span>🔥 Мест мало</span></div>
+    <span class="eye">🤖 День Робототехники · Алматы</span>
+    <h1>Ваш ребёнок соберёт робота, запустит дрон и напечатает игрушку — <em>за 2,5 часа</em></h1>
+    <p class="lead">Мастер-класс в Алматы для школьников с 1 по 7 классы. Увлечём ваших детей технологиями и расскажем вам о профессиях будущего!</p>
+    <div class="cta-row"><button class="btn pulse js-quiz">Записаться на мастер-класс →</button></div>
+    <p style="margin-top:12px;font-weight:800;color:#5c566e;font-size:14.5px">Участие 10 000 ₸ за ребёнка</p>
+    <div class="badges"><span>📍 Алматы</span><span>📅 25–26 июля</span><span>👦 1–7 классы</span></div>
   </div>
   <div class="ph"><div class="blob"></div><div class="free">10 000 ₸<br>за ребёнка</div><img fetchpriority="high" src="img/web/hero.jpg" alt="Ребёнок на мастер-классе по робототехнике"></div>
 </div></div></div>
@@ -179,15 +179,13 @@ footer .lg{color:#fff}
 <div class="datestrip"><div class="wrap">
   <span>📅 <span class="ed">25–26 июля</span></span>
   <span>🕚 <span class="ed">11:00 и 15:00</span></span>
-  <span>📍 <span class="ed">Алматы, [адрес]</span></span>
-  <span>🎫 <span class="ed">10 000 ₸ за ребёнка</span></span>
-  <span class="hot">Только для 1–7 класса</span>
+  <span>📍 <span class="ed">г. Алматы, ул. Сызганова 1 (горный гигант)</span></span>
 </div></div>
 <div style="background:var(--lav)"><div class="wrap" style="text-align:center;padding:15px 20px;font-weight:800;color:var(--purple);font-size:15.5px">👨‍👩‍👧 Приходите вместе с ребёнком — идеально с мамой и папой. Ребёнку важна ваша поддержка!</div></div>
 
 <!-- ZONES -->
 <section><div class="wrap">
-  <div class="shead"><span class="eye">Что будет делать ребёнок</span><h2>2 часа, где он <span class="em-c">создаёт</span>, а не сидит в телефоне</h2></div>
+  <div class="shead"><span class="eye">Что будет делать ребёнок</span><h2>2,5 часа, где он <span class="em-c">создаёт</span>, а не сидит в телефоне</h2></div>
   <div class="zones">
     <div class="zone"><div class="ic">🖨️</div><h3>Печатает игрушку</h3><p>Сам напечатает деталь на 3D-принтере и заберёт домой</p></div>
     <div class="zone"><div class="ic">🚁</div><h3>Запускает дрон</h3><p>Поднимет в воздух настоящий дрон под присмотром наставника</p></div>
@@ -209,7 +207,7 @@ footer .lg{color:#fff}
 
 <!-- HOW -->
 <section><div class="wrap">
-  <div class="shead"><span class="eye">Как проходит</span><h2>Всего <span class="em-p">2 часа</span> — и для ребёнка, и для вас</h2></div>
+  <div class="shead"><span class="eye">Как проходит</span><h2>Всего <span class="em-p">2,5 часа</span> — и для ребёнка, и для вас</h2></div>
   <div class="how">
     <div class="hc"><div class="n">1</div><h3>Встречаем</h3><p>Регистрируем, ребёнок идёт в робо-зоны с наставниками</p></div>
     <div class="hc"><div class="n">2</div><h3>Ребёнок творит</h3><p>Печатает, собирает, запускает дрон — вы рядом узнаёте о развитии ребёнка</p></div>
@@ -221,7 +219,7 @@ footer .lg{color:#fff}
 <section class="moms"><div class="wrap">
   <div class="shead"><span class="eye">Отзывы мам</span><h2>Что говорят родители</h2></div>
   <div class="revs">
-    <div class="rev"><div class="stars">★★★★★</div><p>«Сын два часа не вспоминал про телефон! Пришёл домой с напечатанной фигуркой и весь вечер рассказывал. Записались на курс.»</p><div class="who"><div class="av">А</div><div><b>Айгерим</b><span>мама Даулета, 3 класс</span></div></div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p>«Сын всё занятие не вспоминал про телефон! Пришёл домой с напечатанной фигуркой и весь вечер рассказывал. Записались на курс.»</p><div class="who"><div class="av">А</div><div><b>Айгерим</b><span>мама Даулета, 3 класс</span></div></div></div>
     <div class="rev"><div class="stars">★★★★★</div><p>«Дочка первый раз собрала робота сама. Столько гордости в глазах! Наставники добрые, всё показали. Спасибо!»</p><div class="who"><div class="av">Г</div><div><b>Гульнара</b><span>мама Амины, 5 класс</span></div></div></div>
     <div class="rev"><div class="stars">★★★★★</div><p>«Отличный формат: ребёнок занят делом, а я узнала, как увлечь его технологиями. Всё по-доброму, приходили всей семьёй.»</p><div class="who"><div class="av">М</div><div><b>Мадина</b><span>мама Алихана, 2 класс</span></div></div></div>
   </div>
@@ -258,7 +256,7 @@ footer .lg{color:#fff}
 <section><div class="wrap"><div class="final">
   <h2>Запишите ребёнка на мастер-класс</h2>
   <p>25–26 июля · для 1–7 класса · 10 000 ₸ за ребёнка (родитель бесплатно) · приходите с родителями · места ограничены.</p>
-  <button class="btn js-quiz">Записать ребёнка на МК →</button>
+  <button class="btn js-quiz">Записаться на мастер-класс →</button>
 </div></div></section>
 
 <!-- FAQ -->
@@ -269,7 +267,7 @@ footer .lg{color:#fff}
     <details class="fq"><summary>Нужно ли приходить с родителями?</summary><div class="a">Да, ребёнок приходит только с родителем. Идеально — с обоими (и мама, и папа): ребёнку важна ваша поддержка, а вы вместе увидите его успех и узнаете о его развитии.</div></details>
     <details class="fq"><summary>Для какого возраста?</summary><div class="a">Только для школьников 1–7 класса. Активности подбираем под возраст ребёнка.</div></details>
     <details class="fq"><summary>Что взять с собой?</summary><div class="a">Ничего — всё оборудование предоставляем. Просто приходите с ребёнком в хорошем настроении.</div></details>
-    <details class="fq"><summary>Сколько длится?</summary><div class="a">Около 2 часов. Ребёнок всё время занят в робо-зонах.</div></details>
+    <details class="fq"><summary>Сколько длится?</summary><div class="a">Около 2,5 часов. Ребёнок всё время занят в робо-зонах.</div></details>
     <details class="fq"><summary>А если не сможем прийти?</summary><div class="a">Напишите нам в WhatsApp — перенесём на другой день или поток.</div></details>
   </div>
 </div></section>
