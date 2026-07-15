@@ -37,6 +37,16 @@ h2{font-weight:900;font-size:clamp(26px,4.6vw,38px);line-height:1.12;margin:12px
 .btn.wa{background:linear-gradient(135deg,#3ee07a,#22c55e);box-shadow:0 10px 22px rgba(34,197,94,.32)}
 .btn.pulse{animation:pulse 2.1s infinite}
 @keyframes pulse{0%,100%{box-shadow:0 12px 26px rgba(255,94,46,.38)}50%{box-shadow:0 14px 40px rgba(255,94,46,.7)}}
+.btn.out{background:#fff;color:var(--coral);border:2px solid var(--coral);box-shadow:none}
+.btn.indigo{background:linear-gradient(135deg,#5B4BE0,#7A5CFF);box-shadow:0 12px 26px rgba(91,75,224,.35)}
+.btn.indigo:hover{box-shadow:0 16px 32px rgba(91,75,224,.45)}
+.cta-c{text-align:center;margin-top:30px}
+.cta-band{margin-top:32px;border-radius:22px;padding:28px 24px;text-align:center}
+.cta-band h3{font-weight:900;font-size:clamp(19px,3.4vw,25px);margin-bottom:16px;line-height:1.2}
+.cta-band.soft{background:#fff;border:2px dashed var(--coral2)}
+.cta-band.indigo{background:linear-gradient(135deg,#5B4BE0,#7A5CFF);color:#fff}
+.cta-band.indigo h3{color:#fff}
+@media(max-width:560px){.cta-band .btn,.cta-c .btn{width:100%}}
 /* header */
 header{position:sticky;top:0;z-index:50;background:rgba(255,247,241,.92);backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;height:64px}
@@ -199,6 +209,7 @@ footer .lg{color:#fff}
     <div class="zone"><img loading="lazy" src="img/web/z-robot.jpg" alt="Дети собирают робота"><div class="txt"><h3>Собирает робота</h3><p>Соберёт робота-машинку своими руками</p></div></div>
     <div class="zone"><img loading="lazy" src="img/web/z-code.jpg" alt="Дети программируют на ноутбуках"><div class="txt"><h3>Пробует код</h3><p>Первое программирование — как в мультиках, только по-настоящему</p></div></div>
   </div>
+  <div class="cta-c"><button class="btn pulse js-quiz">Хочу, чтобы ребёнок это попробовал →</button></div>
 </div></section>
 
 <!-- WHY MOMS -->
@@ -210,6 +221,7 @@ footer .lg{color:#fff}
     <div class="ben"><div class="ic">😊</div><div><h3>Первый успех</h3><p>«Я сам это сделал!» — уверенность и гордость в глазах</p></div></div>
     <div class="ben"><div class="ic">🛡️</div><div><h3>Безопасно и под присмотром</h3><p>Малые группы, опытные наставники, всё оборудование наше</p></div></div>
   </div>
+  <div class="cta-band soft"><h3>Подарите ребёнку такой опыт — пока есть места</h3><button class="btn indigo js-quiz">Записать ребёнка на мастер-класс</button></div>
 </div></section>
 
 <!-- HOW -->
@@ -250,6 +262,7 @@ footer .lg{color:#fff}
     </div>
   </div>
   <div class="safe"><span>👥 Малые группы</span><span>🧑‍🏫 Опытные наставники</span><span>🛠 Всё оборудование наше</span><span>🎈 Дружелюбная атмосфера</span></div>
+  <div class="cta-c"><button class="btn out js-quiz">Записаться к экспертам ROLAB →</button></div>
 </div></section>
 
 <!-- GALLERY -->
@@ -261,6 +274,7 @@ footer .lg{color:#fff}
     <div class="tall"><img loading="lazy" src="img/web/mk4.jpg" alt="Ребёнок на мастер-классе"></div>
     <div class="wide"><img loading="lazy" src="img/web/mk2.jpg" alt="Дети радуются на мастер-классе"></div>
   </div>
+  <div class="cta-band indigo"><h3>Хотите, чтобы ваш ребёнок был среди этих счастливых детей?</h3><button class="btn js-quiz">Хочу привести ребёнка →</button></div>
 </div></section>
 
 <!-- BONUS -->
